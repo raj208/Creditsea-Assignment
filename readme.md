@@ -55,7 +55,7 @@ creditsea-assignment/
       upload.js
     utils/
       parser.js
-    .env              # not committed
+    .env             
     package.json
   client/
     src/
@@ -63,7 +63,7 @@ creditsea-assignment/
       api.js
       main.jsx
       index.css
-    .env              # VITE_API_URL
+    .env              
     package.json
 README.md
 ```

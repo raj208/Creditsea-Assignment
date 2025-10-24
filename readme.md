@@ -32,8 +32,6 @@ A minimal MERN app that:
   <img src="./assets/Screenshot 2025-10-24 080922.png" alt="Report Details screen" width="48%" />
 </p>
 
-> Left: Upload → Preview → Save.  
-> Right: Report Details with Basic, Summary, and Accounts table.
 
 
 ## Getting Started

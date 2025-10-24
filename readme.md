@@ -24,4 +24,15 @@ A minimal MERN app that:
 
 ---
 
-## Project Structure
+## Getting Started
+
+### 1) Prerequisites
+- Node **v20.x** (`node -v`)
+- MongoDB Atlas account (Free M0 cluster)
+
+### 2) Backend setup
+```bash
+cd creditsea-assignment/server
+npm install
+
+

@@ -243,7 +243,7 @@ Report {
 
 ---
 
-## 🧪 cURL Examples (Windows Git Bash)
+## 🧪 CURL Examples (Windows Git Bash)
 
 ```bash
 # Preview
@@ -259,44 +259,3 @@ curl "http://localhost:5000/api/reports?limit=5"
 curl http://localhost:5000/api/reports/<reportId>
 ```
 
----
-
-## 🛟 Troubleshooting
-
-- **Only .xml files** — form-data key must be `file`, extension `.xml`  
-- **DB not connected** — check `MONGODB_URI`, Atlas IP allowlist → `/api/db/health`  
-- **Auth failed** — recreate Atlas DB user and update `.env`  
-- **CORS** — server enables `cors()`. Ensure `client/.env` points to `http://localhost:5000`  
-- **Windows paths** — prefer forward slashes (`C:/path/file.xml`) or quote paths with spaces
-
----
-
-## 🎬 Demo Recording Script (optional)
-
-- **Start server**
-  ```bash
-  cd creditsea-assignment/server
-  npm run dev
-  # open: http://localhost:5000/api/health and /api/db/health
-  ```
-- **Start client**
-  ```bash
-  cd ../client
-  npm run dev
-  # open: http://localhost:5173
-  ```
-- **UI flow:** Choose XML → Preview → Save → View report  
-- **API flow (terminal):**
-  ```bash
-  curl -X POST http://localhost:5000/api/upload -F "file=@C:/Users/<you>/Downloads/Sample.xml"
-  curl -X POST http://localhost:5000/api/upload/save -F "file=@C:/Users/<you>/Downloads/Sample.xml"
-  curl "http://localhost:5000/api/reports?limit=5"
-  curl http://localhost:5000/api/reports/<reportId>
-  ```
-
----
-
-## 📄 Notes
-
-- Don’t commit `.env` files or real XMLs containing sensitive data.  
-- This app is for assignment/demo use; add auth and stricter validation before production.
